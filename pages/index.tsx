@@ -1,5 +1,13 @@
-import Box from "../src/components/box";
-import theme from "../src/theme/theme";
+export { default } from '@src/screens/homeScreen/homeScreen'
+
+
+/* import Box from "@src/components/box";
+import theme from "@src/theme/theme";
+import styled from 'styled-components';
+
+const MeuComponente = styled.div`
+color:purple;
+`;
 
 export default function HomeScreen() {
     return (
@@ -7,9 +15,13 @@ export default function HomeScreen() {
             tag="main"
             styleSheet={{
                 fontFamily: theme.typography.fontFamily,
+
             }}
         >
-            Oi
+
+            <MeuComponente>
+                Oi
+            </MeuComponente>
         </Box>
     )
-}
+} */
