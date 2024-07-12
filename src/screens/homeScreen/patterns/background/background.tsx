@@ -1,4 +1,4 @@
-import Box from "@src/components/box";
+import Box from "@src/components/box/box";
 import Text from "@src/components/text/text";
 
 

@@ -1,4 +1,4 @@
-import Box from "@src/components/box";
+import Box from "@src/components/box/box";
 import Background from "./patterns/background/background";
 import Menu from "./patterns/menu/menu";
 
