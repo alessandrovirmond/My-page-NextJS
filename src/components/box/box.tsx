@@ -1,9 +1,11 @@
 import React from 'react'; 
 import { StyleSheet } from "@src/theme/styleSheet";
-import { BaseComponent } from '@src/theme/baseComponent';
+import { BaseComponent } from '@src/theme/BaseComponent';
+
+
 
 interface BoxProps{
-    tag?: any;
+    tag?: 'main' | 'div' | 'article' | 'section' | 'ul'  | string;
     children?: React.ReactNode;
     styleSheet?: StyleSheet;
 }

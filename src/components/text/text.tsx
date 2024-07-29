@@ -12,7 +12,7 @@ export default function Text(props: TextProps) {
 
         </Box>
     )
-}
+} 
 
 Text.defaultProps = {
     tag: 'p'
