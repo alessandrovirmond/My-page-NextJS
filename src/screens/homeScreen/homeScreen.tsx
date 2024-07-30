@@ -14,10 +14,10 @@ export default function HomeScreen(){
         <Menu/>
         <Feed>
             <Feed.Header />
-            <Text>
+            <Text tag="h2" variant="display1">
                 Últimas Atualizações
             </Text>
-            <Feed.Header />
+            <Feed.Posts />
         </Feed>
         <Footer />
         </Box>
