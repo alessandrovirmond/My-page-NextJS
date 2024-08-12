@@ -2,7 +2,7 @@ import Box from '@src/components/box/box';
 import Icon from '@src/components/icon/icon';
 import Text from '@src/components/text/text';
 import React from 'react';
-
+import Image from '@src/components/image/image';
 
 interface FeedProps {
     children: React.ReactNode;
@@ -21,11 +21,21 @@ export default function Feed({children}){
 
 Feed.Header = () => {
     return (
-        <Box>
+        <Box
+        styleSheet={{
+            color: 'white',
+        }}
+        >
+            <Image
+            styleSheet={{
+                width: '128px',
+                 height : '128px',
+                 borderRadius: '100%'
+            }}
+            src="https://github.com/alessandrovirmond.png"
+            alt="Imagem de Perfil de Alessandro Virmond"
+            />
             <Icon name="youtube"/>
-            <Icon name="twitter"/>
-            <Icon name="instagram"/>
-            <Icon name="github"/>
             <Text>
                 Feed Base
             </Text>

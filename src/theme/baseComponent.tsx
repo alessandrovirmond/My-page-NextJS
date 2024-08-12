@@ -4,6 +4,7 @@ import { StyleSheet } from "@src/theme/styleSheet"
 import { parseStyleSheet } from '@skynexui/responsive_stylesheet';
 
 interface StyledBaseComponent{
+    ref: any;
     styleSheet?: StyleSheet;
 }
 
@@ -11,11 +12,11 @@ const StyledBaseComponent = styled.div<StyledBaseComponent>`
     ${({styleSheet}) => parseStyleSheet(styleSheet)}
 `;
 
-export const BaseComponent = (props) => {
+const BaseComponent = React.forwardRef<unknown, any>((props, ref) => {
     return (
-        <StyledBaseComponent {...props} />
+        <StyledBaseComponent ref={ref} {...props} />
     )
-}
+});
 
 BaseComponent.defaultProps = {
     styleSheet: {},
