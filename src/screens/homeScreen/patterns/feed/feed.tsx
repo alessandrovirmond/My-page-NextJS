@@ -3,6 +3,7 @@ import Icon from '@src/components/icon/icon';
 import Text from '@src/components/text/text';
 import React from 'react';
 import Image from '@src/components/image/image';
+import Button from '@src/components/button/button';
 
 interface FeedProps {
     children: React.ReactNode;
@@ -21,11 +22,12 @@ export default function Feed({children}){
 
 Feed.Header = () => {
     return (
-        <Box
-        styleSheet={{
-            color: 'white',
-        }}
-        >
+        <Box>
+            <Button>
+                Olá 
+            </Button>
+            <Button.Base>
+
             <Image
             styleSheet={{
                 width: '128px',
@@ -39,6 +41,8 @@ Feed.Header = () => {
             <Text>
                 Feed Base
             </Text>
+                            
+            </Button.Base>
         </Box>
     )
 }

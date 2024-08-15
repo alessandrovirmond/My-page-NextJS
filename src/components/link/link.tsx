@@ -8,7 +8,7 @@ import { useTheme } from "styled-components";
 interface LinkProps {
     href: string;
     children: React.ReactNode;
-    styleSheet: StyleSheet;
+    styleSheet?: StyleSheet;
     viariant?: ThemeTypographyVariants;
     colorVariant?: 'primary' | 'accent' | 'neutral' | 'sucess' | 'warning' | 'negative';
     colorVariantEnabled?: boolean;
@@ -57,11 +57,11 @@ const Link = React.forwardRef(({ href, children, colorVariant, colorVariantEnabl
         ...props
     }
 
-    if (isInternalLink) return (<Text 
-    {...{
-        target: '_blank',
-        ...linkProps
-    }} />)
+    if (isInternalLink) return (<Text
+        {...{
+            target: '_blank',
+            ...linkProps
+        }} />)
 
     return (
         <NextLink href={href} passHref>
