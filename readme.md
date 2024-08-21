@@ -18,6 +18,8 @@ yarn info react-down
 
 yarn add @skynexui/responsive_stylesheet 
 
+yarn add react-use-ripple
+
 
 
 
