@@ -15,16 +15,18 @@ export default function HomeScreen(){
         <Box
             tag="main"
             styleSheet={{
-                backgroundColor: theme.colors.neutral,
+                backgroundColor: theme.colors.neutral.x000,
                 flex: 1, 
                 alignItems: 'center'
             }}
         >
-            <Link colorVariant = "negative" href={"/sobre"}>
-            Vá para a página Sobre
-            </Link>
+
         <Background/>
         <Menu/>
+        <Feed>
+            <Feed.Header/>
+        </Feed>
+       {/*  <Menu/>
         <Feed>
             <Feed.Header />
             <Text tag="h2" variant="heading1">
@@ -32,7 +34,8 @@ export default function HomeScreen(){
             </Text>
             <Feed.Posts />
         </Feed>
-        <Footer />
+        */
+        <Footer /> }
         </Box>
     )
 }
